@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from datetime import datetime
 import requests
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__)
 
 @app.route('/output', methods=['GET'])
 def output():
