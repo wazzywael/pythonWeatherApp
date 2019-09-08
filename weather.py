@@ -4,8 +4,8 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/output', methods=['GET'])
-def output():
+@app.route('/', methods=['GET'])
+def index():
     r = requests.get('http://api.openweathermap.org/data/2.5/weather?q=Leeds&APPID=12585434db32732055c534824be5a420')
     json_object = r.json()
 
